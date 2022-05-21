@@ -2,16 +2,16 @@
   "name": "module_1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.hbs",
+    "dev": "parcel  src/pages/index.hbs --no-cache && parcel watch ./src/*",
     "build": "parcel build index.hbs"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "@parcel/transformer-less": "^2.5.0",
     "parcel": "^2.5.0"
   }
 }

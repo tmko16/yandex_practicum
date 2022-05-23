@@ -1,1 +1,26 @@
-<h1>1xBET!</h1>
+---
+title: Регистрация
+css: 
+  - reset.css
+  - layout.less
+  - registration.less
+---
+
+{{#extend "base"}}
+   {{#content "main"}}
+    <main>
+      <div class="form">
+        <div class="form__title">Регистрация</div>
+        <div class="form__inputs">
+          {{#each registration.fields}}
+            {{> formInput title = this.title }}
+          {{/each}}
+        </div>
+        <div class="form__actions">
+           {{> button text = "Зарегистрироваться" href = "app.hbs"}}
+           <span class="action__registration"><a href="registration.hbs">Нет аккаунта?</a></span>
+        </div>
+      </div>      
+    </main>
+  {{/content}}
+{{/extend}}

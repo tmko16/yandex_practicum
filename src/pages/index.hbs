@@ -1,11 +1,16 @@
 ---
-title: Home Page
+title: Sprint_1
 css: 
+  - reset.css
   - layout.less
+scripts:
+  - ../scripts/index.js
 ---
 
-{{!< base}}
-
-<main>
-  main
-</main>
+{{#extend "base"}}
+   {{#content "main"}}
+    <main>
+      <a href="login.hbs">Переход на логин</a>
+    </main>
+  {{/content}}
+{{/extend}}

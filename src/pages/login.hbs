@@ -1,0 +1,26 @@
+---
+title: Авторизация
+css: 
+  - reset.css
+  - layout.less
+  - login.less
+---
+
+{{#extend "base"}}
+   {{#content "main"}}
+    <main>
+      <div class="form">
+        <div class="form__title">Вход</div>
+        <div class="form__inputs">
+          {{#each login.fields}}
+            {{> formInput title = this.title }}
+          {{/each}}
+        </div>
+        <div class="form__actions">
+          <p>auth</p>
+          <p>not a user?</p>
+        </div>
+      </div>      
+    </main>
+  {{/content}}
+{{/extend}}

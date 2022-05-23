@@ -11,7 +11,14 @@
         {{> title}}
     </title>
 </head>
-<body>
-    {{{body}}}
+<body>  
+    {{#block "main"}}
+    {{/block}}
+
+    {{#block "scripts"}}
+        {{#each scripts}}
+            <script defer src="{{this}}"></script>
+        {{/each}}
+    {{/block}}
 </body>
 </html>

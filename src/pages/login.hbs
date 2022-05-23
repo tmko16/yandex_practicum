@@ -17,8 +17,8 @@ css:
           {{/each}}
         </div>
         <div class="form__actions">
-          <p>auth</p>
-          <p>not a user?</p>
+           {{> button text = "Авторизоваться" href = "app.hbs"}}
+           <span class="action__registration"><a href="registration.hbs">Нет аккаунта?</a></span>
         </div>
       </div>      
     </main>

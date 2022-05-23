@@ -23,6 +23,7 @@ main {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            margin-bottom: 180px;
         }
         .form-input {
              display: flex;
@@ -40,11 +41,38 @@ main {
                  height: 35px;
                  width: 250px;
                  border-radius: 5px;
-                 border: .5px solid #333333;
+                 border: .5px solid var(--border-color);
                  outline: none;
                  padding: 0 10px;
                  color: var(--text-color-accent);
+                 
              }
+        }
+        &__actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            .action__button {
+              height: 37px;
+              width: 280px;
+              border-radius: 5px;
+              padding: 10px 50px;
+              background-color: var(--accent-color);
+              color: var(--text-color-accent);
+              border: none;
+              cursor: pointer;
+            }
+            .action__registration {
+                a {
+                    color: var(--accent-color);
+                    text-decoration: underline;
+                }
+                a:visited {
+                    color:  var(--accent-color);
+                }
+              
+            }
         }
     }
 }

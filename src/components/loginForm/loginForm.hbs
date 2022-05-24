@@ -3,7 +3,7 @@
         <div class="login-form__title">{{ title }}</div>
         <div class="login-form__fields">
             {{#each login.fields}}
-                {{> formInput/formInput label = this.title name = this.name}}
+                {{> formInput/formInput label = this.title name = this.name type = this.type }}
             {{/each}}
         </div>
         <div class="login-form__actions">

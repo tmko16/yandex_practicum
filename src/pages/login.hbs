@@ -1,26 +1,14 @@
 ---
-title: Авторизация
+title: Вход
 css: 
   - reset.css
   - layout.less
-  - login.less
 ---
 
 {{#extend "base"}}
    {{#content "main"}}
     <main>
-      <div class="form">
-        <div class="form__title">Вход</div>
-        <div class="form__inputs">
-          {{#each login.fields}}
-            {{> formInput title = this.title }}
-          {{/each}}
-        </div>
-        <div class="form__actions">
-           {{> button text = "Авторизоваться" href = "app.hbs"}}
-           <span class="action__registration"><a href="registration.hbs">Нет аккаунта?</a></span>
-        </div>
-      </div>      
+       {{> loginForm/loginForm}}
     </main>
   {{/content}}
 {{/extend}}

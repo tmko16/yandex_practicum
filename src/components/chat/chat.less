@@ -1,0 +1,29 @@
+.chat {
+    display: flex;
+
+    &__sidebar {
+        flex-basis: 300px;
+        background-color: var(--background-light-color);
+        height: 100vh;
+    }
+    &__profile-link {
+        height: 60px;
+        background-color: rgb(49, 47, 22);
+    }
+    &__search {
+        height: 50px;
+        background-color: rgb(16, 59, 82);
+    }
+    &__dialogs {
+        height: calc(100% - 60px - 50px);
+        background-color: rgb(26, 62, 50);
+    }
+
+    &__main {
+        background-color: rgb(77, 36, 36);
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+//TODO: vh это хак, нужно задать родителям relative позицию или внести наследование 100% высоты 

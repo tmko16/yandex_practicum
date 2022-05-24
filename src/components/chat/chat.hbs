@@ -7,11 +7,13 @@
             {{> searchBar/searchBar}}
         </div>
         <div class="chat__dialogs">
-            {{> dialog/dialog}}
+            {{#each mocks.dialogs}}
+            {{> dialog/dialog }}
+            {{/each}}
         </div>
     </div>
     <div class="chat__main">
-        dasda
+        <span>Выберите чат, что бы отправить сообщение.</span>
     </div>
 
 </div>

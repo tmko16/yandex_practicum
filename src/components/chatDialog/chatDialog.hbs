@@ -1,0 +1,45 @@
+<div class="chat-dialog">
+    <div class="chat-dialog__sidebar">
+        <div class="chat-dialog__profile-link">
+            <span>Профиль</span>
+        </div>
+        <div class="chat-dialog__search">
+            {{> searchBar/searchBar}}
+        </div>
+        <div class="chat-dialog__dialogs">
+            {{#each mocks.dialogs}}
+            {{> dialog/dialog }}
+            {{/each}}
+        </div>
+    </div>
+    <div class="chat-dialog__main">
+        <div class="msg-area">
+            <div class="msg-area__chat-info">
+                <div class="msg-area__left-block-wrapper">
+                    <div class="msg-area__chat-name">Андрей 21  1</div>
+                    <div class="msg-area__was-online">Был онлайн в 12:64</div>
+                </div>
+                <div class="msg-area__action-button">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+            <div class="msg-area__chat">
+                тут история переписки
+            </div>
+            <div class="msg-area__msg-sender">
+                <div class="msg-area__attach">
+                    :paperclip:
+                </div>   б
+                <div class="msg-area__msg-input">
+                    <input type="text" name="" id="">
+                </div>
+                <div class="msg-area__send-btn">отправить</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

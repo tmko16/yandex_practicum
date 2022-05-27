@@ -7,19 +7,27 @@
         background-color: var(--background-light-color);
         height: 100vh;
     }
-    &__profile-link {
+
+    &__profile-link-container {
         height: 20px;
         display: flex;
         justify-content: flex-end;
         margin: 10px 10px 0 0;
-        font-size: 12px;
     }
+
+    &__profile_link {
+        color: var(--accent-color);
+        font-size: 15px;
+        text-decoration: none;
+    }
+
     &__search {
         height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     &__dialogs {
         height: calc(100% - 60px - 50px);
     }

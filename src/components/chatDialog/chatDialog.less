@@ -7,19 +7,27 @@
         background-color: var(--background-light-color);
         height: 100vh;
     }
-    &__profile-link {
+
+    &__profile-link-container {
         height: 20px;
         display: flex;
         justify-content: flex-end;
         margin: 10px 10px 0 0;
-        font-size: 12px;
     }
+
+    &__profile_link {
+        color: var(--accent-color);
+        font-size: 15px;
+        text-decoration: none;
+    }
+
     &__search {
         height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     &__dialogs {
         height: calc(100% - 60px - 50px);
     }
@@ -31,7 +39,7 @@
 
         .msg-area {
             height: 100%;
-            
+
             &__chat-info {
                 border: 1px solid var(--background-color);
                 padding: 5px 10px;
@@ -40,12 +48,14 @@
                 display: flex;
                 justify-content: space-between;
             }
+
             &__left-block-wrapper {
                 display: flex;
                 flex-direction: column;
                 gap: 7px;
 
             }
+
             &__was-online {
                 font-size: 9px;
                 color: var(--text-color-light);
@@ -53,6 +63,7 @@
 
             &__action-button {
                 margin-right: 10px;
+
                 .circle {
                     background-color: var(--accent-color);
                     height: 10px;
@@ -75,7 +86,7 @@
             }
 
             &__msg-sender {
-                
+
                 height: 120px;
                 display: flex;
                 justify-content: space-between;
@@ -83,15 +94,18 @@
                 gap: 10px;
                 padding: 0 10px;
             }
+
             &__attach {
                 height: 35px;
                 width: 35px;
                 padding-top: 10px;
             }
+
             &__msg-input {
                 width: 100%;
                 border-top: 1px solid var(--accent-color);
                 padding-top: 20px;
+
                 input {
                     outline: none;
                     width: 100%;
@@ -103,6 +117,7 @@
                     padding: 5px 20px;
                 }
             }
+
             &__send-btn {
                 padding-top: 20px;
             }
